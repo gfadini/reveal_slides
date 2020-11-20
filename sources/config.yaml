@@ -1,0 +1,64 @@
+reader: markdown+emoji
+writer: revealjs
+
+#output-file:    slides.html
+
+#input-files:
+#        -       slides.md
+
+standalone:     true
+self-contained: true
+
+variables:
+        # other configs are https://revealjs.com/config/
+        revealjs-url: ./reveal.js
+        theme:          black           # beige/black/blood/league/moon/night/serif/simple/sky/solarized/white
+        transition:     none            # none/fade/slide/convex/concave/zoom/cube
+        transitionSpeed: default        # default/fast/slow
+        backgroundTransition: fade      # none/fade/slide/convex/concave/zoom
+        keyboard:       1               # keeb navigation
+        slideNumber:    1
+        progress:       1               # Display a presentation progress bar
+        rtl:            0               # Change the presentation direction to be RTL
+        hash:           0               # Add the current slide number to the URL hash
+        controls:       1               # Displays the controls
+        center:         0               # Vertical centering
+        embedded:       1               # If limited portion of screen
+        # controlsLayout: edges           # edges, bottom-right
+        # html variables
+        fontsize:       20
+        # mainfont:
+        # BACKGROUND        
+        # parallaxBackgroundImage:        images/background.jpeg
+        # parallaxBackgroundHorizontal:   100
+        # parallaxBackgroundVertical:     100
+        # parallaxBackgroundSize:         50
+        # data-background-image: images/background.jpeg
+        # data-background-size: contain
+        title-slide-attributes:
+                # data-background-image: /path/to/title_image.png
+                data-background-size: contain
+
+metadata:
+        author:
+                G. Fadini
+        lang:
+                en-US
+
+citeproc:       true
+#csl:            ieee
+bibliography:
+        -       bibliography.bib
+cite-method:    biblatex # or natbib, citeproc
+
+highlight-style: pygments
+
+html-math-method:
+        method: mathjax
+
+incremental: true
+
+slide-level: 2
+fail-if-warnings: true
+verbosity:      INFO
+# log-file:       log.json
